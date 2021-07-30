@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 India Tracker</title>
+     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+   
+
+  
+
+   <div class="container-fluid  p-5 bg-black text text-white text-center my-3">
+    <h1>KARNATAKA</h1>
+       <h5 class="text-muted">
+        Covid-19 Cases in Karnataka
+
+       </h5>
+  
+   
+   <div class="container my-5">
+       <div class="row text-center">
+           <div class="col-3 text-warning">
+               <h5>Confirmed</h5>
+               <p id="confirmed"></p>
+           </div>
+           <div class="col-3 text-info">
+            <h5>Active</h5>
+            <p id="active"></p>
+        </div>
+           <div class="col-3 text-success">
+            <h5>Recovered</h5>
+            <p id="recovered"></p>
+        </div>
+        <div class="col-3 text-danger">
+            <h5>Deaths</h5>
+            <p id="deaths"></p>
+        </div>
+       
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button><div class="col-3 text-danger">
+            <h8>Last Updated:</h8>
+            <p id="lastupdatedtime"></p>
+        </div>
+       </div>
+        
+     
+      
+   </div>
+  <center> <h2 class="my-md-3 site-title text-white bg-black">Most affected CORONA Discricts of Karnataka</h2></center>
+  <hr>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:white">
+  <br>
+
+  <br>
+  <br>
+  
+  <h5>BANGALURU URBAN</h5>
+           <div class="container my-5">
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>Confirmed</h5>
+            <H5>3,63,665</H5>
+            
+        </div>
+        <div class="col-3 text-info">
+         <h5>Active</h5>
+         <H5>18,172</H5>
+         
+     </div>
+        <div class="col-3 text-success">
+         <h5>Recovered</h5>
+         <h5>3,41,424</h5>
+     </div>
+     <div class="col-3 text-danger">
+         <h5>Deaths</h5>
+         <h5>4,068</h5>
+     </div>
+
+    </div>
+  <br>
+  <br>
+
+
+  <h5>MYSURU</h5>
+        
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>Confirmed</h5>
+            <H5>50,023</H5>
+            
+        </div>
+        <div class="col-3 text-info">
+         <h5>Active</h5>
+         <H5>683</H5>
+         
+     </div>
+        <div class="col-3 text-success">
+         <h5>Recovered</h5>
+         <h5>48,351</h5>
+     </div>
+     <div class="col-3 text-danger">
+         <h5>Deaths</h5>
+         <h5>989</h5>
+     </div>
+
+    </div>
+  <br>
+  <br>
+
+ 
+    
+        
+  <h5>BALLARI</h5>
+          
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>Confirmed</h5>
+            <H5>38,077</H5>
+            
+        </div>
+        <div class="col-3 text-info">
+         <h5>Active</h5>
+         <H5>259</H5>
+         
+     </div>
+        <div class="col-3 text-success">
+         <h5>Recovered</h5>
+         <h5>37,240</h5>
+     </div>
+     <div class="col-3 text-danger">
+         <h5>Deaths</h5>
+         <h5>578</h5>
+     </div>
+
+    </div>
+  <br>
+  <br>
+                
+  <h5>DAKSHINA KANNADA</h5>
+
+<div class="row text-center">
+<div class="col-3 text-warning">
+   <h5>Confirmed</h5>
+   <H5>31,566</H5>
+   
+</div>
+<div class="col-3 text-info">
+<h5>Active</h5>
+<H5>469</H5>
+
+</div>
+<div class="col-3 text-success">
+<h5>Recovered</h5>
+<h5>30,389</h5>
+</div>
+<div class="col-3 text-danger">
+<h5>Deaths</h5>
+<h5>706</h5>
+</div>
+
+</div>
+<br>
+<br>
+
+<h5>HASSAN</h5>
+      
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>Confirmed</h5>
+            <H5>26,696</H5>
+            
+        </div>
+        <div class="col-3 text-info">
+         <h5>Active</h5>
+         <H5>428</H5>
+         
+     </div>
+        <div class="col-3 text-success">
+         <h5>Recovered</h5>
+         <h5>25,884</h5>
+     </div>
+     <div class="col-3 text-danger">
+         <h5>Deaths</h5>
+         <h5>384</h5>
+     </div>
+
+    </div>
+  <br>
+  <br>
+      
+  <h5>BELAGAVI</h5>
+
+<div class="row text-center">
+<div class="col-3 text-warning">
+   <h5>Confirmed</h5>
+   <H5>25,457</H5>
+   
+</div>
+<div class="col-3 text-info">
+<h5>Active</h5>
+<H5>357</H5>
+
+</div>
+<div class="col-3 text-success">
+<h5>Recovered</h5>
+<h5>24,760</h5>
+</div>
+<div class="col-3 text-danger">
+<h5>Deaths</h5>
+<h5>340</h5>
+</div>
+
+</div>
+<br>
+<br>
+
+<h5>TUMAKURU</h5>
+          
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>Confirmed</h5>
+            <H5>22,910</H5>
+            
+        </div>
+        <div class="col-3 text-info">
+         <h5>Active</h5>
+         <H5>473</H5>
+         
+     </div>
+        <div class="col-3 text-success">
+         <h5>Recovered</h5>
+         <h5>22,073</h5>
+     </div>
+     <div class="col-3 text-danger">
+         <h5>Deaths</h5>
+         <h5>364</h5>
+     </div>
+
+    </div>
+  <br>
+  <br>
+      
+  <h5>UDUPI</h5>
+
+<div class="row text-center">
+<div class="col-3 text-warning">
+   <h5>Confirmed</h5>
+   <H5>22,518</H5>
+   
+</div>
+<div class="col-3 text-info">
+<h5>Active</h5>
+<H5>176</H5>
+
+</div>
+<div class="col-3 text-success">
+<h5>Recovered</h5>
+<h5>22,155</h5>
+</div>
+<div class="col-3 text-danger">
+<h5>Deaths</h5>
+<h5>187</h5>
+</div>
+
+</div>
+<br>
+<br>
+
+
+<h5>DEVANAGERE</h5>
+
+<div class="row text-center">
+<div class="col-3 text-warning">
+   <h5>Confirmed</h5>
+   <H5>21,442</H5>
+   
+</div>
+<div class="col-3 text-info">
+<h5>Active</h5>
+<H5>224</H5>
+
+</div>
+<div class="col-3 text-success">
+<h5>Recovered</h5>
+<h5>20,955</h5>
+</div>
+<div class="col-3 text-danger">
+<h5>Deaths</h5>
+<h5>263</h5>
+</div>
+
+</div>
+<br>
+<br>
+
+
+<h5>SHIVAMOGGA</h5>
+
+<div class="row text-center">
+<div class="col-3 text-warning">
+   <h5>Confirmed</h5>
+   <H5>21,401</H5>
+   
+</div>
+<div class="col-3 text-info">
+<h5>Active</h5>
+<H5>245</H5>
+
+</div>
+<div class="col-3 text-success">
+<h5>Recovered</h5>
+<h5>20,808</h5>
+</div>
+<div class="col-3 text-danger">
+<h5>Deaths</h5>
+<h5>348</h5>
+</div>
+
+</div>
+<br>
+<br>
+
+
+</div>
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color:yellowgreen;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a href="https://m.facebook.com/ayushaman.ayushaman" class="fa fa-facebook"></a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+           
+            <a href="https://twitter.com/AyushAm16313200" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </a>
+          
+          <!--Linkedin -->
+          <a class="li-ic">
+            <a href="https://www.linkedin.com/in/ayush-aman-5385a5175/" class="fa fa-linkedin"></a>
+            
+          <!--Instagram-->
+         
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Copyright conditions:--</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Misuse of information provided on the website is strictly prohibited.Owner is free to take legal action against any piracy or copying of data.</p>
+
+      </div>
+      <!-- Grid column -->
+
+     
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="https://www.mohfw.gov.in/">GOI-Official Handle</a>
+        </p>
+        <p>
+          <a href="https://www.ayush.gov.in/">Ayush-Ministry</a>
+        </p>
+        <p>
+          <a href="https://www.mha.gov.in/notifications/circulars-covid-19">Home-Ministry Covid-19 Circulars</a>
+        </p>
+        <p>
+          <a href="https://labour.gov.in/advisories-covid-19">Advisories</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home mr-3"></i>Muzaffarpur,Bihar,India</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i>modi4651@gmail.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> 7349926129</p>
+        
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-uppercase">© 2020 Copyright:-Covid-19India Live
+      <a href="https://www.privacypolicygenerator.info/live.php?token=rclgBVlDy4fS1vz4BJQ4vBcYKbP4mDxO">Policy</a> </div>
+  
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+   
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="script KA.js">
+
+</script>
+
+</html>
